@@ -2,24 +2,28 @@ import java.util.Scanner;
 
 public class AlemonadeStore {
 
-        int initialBalance;
+    int initialBalance;
 
-        public AlemonadeStore(int initialBalance) {
+    public AlemonadeStore(int initialBalance) {
         this.initialBalance = initialBalance;
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         String LINE = "---------------------------------------------------------------------------------";
 
         AlemonadeStore savings = new AlemonadeStore(10);
         System.out.println("Please enter your name: ");
 
-
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
 
+        System.out.println("Please enter your surname: ");
+
+        scanner = new Scanner(System.in);
+        String surname = scanner.nextLine();
+
         //Credits
-        System.out.println("\nHello " + name + ".");
+        System.out.println("\nHello " + name + " " + surname + ".");
         System.out.println("\nI am assuming your here to buy some lemonade.");
         System.out.println("\nYour current balance of lemonade credits is: " + savings.initialBalance);
         System.out.println("\n (1 lemonade costs 1 credit) \n");

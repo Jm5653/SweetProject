@@ -15,7 +15,13 @@ public class AcookieStore {
 
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        System.out.println("Hello " + name + ".");
+
+        System.out.println("Please enter your surname: ");
+
+        scanner = new Scanner(System.in);
+        String surname = scanner.nextLine();
+
+        System.out.println("Hello " + name + " " + surname + ".");
 
         System.out.println(LINE);
 
